@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body style="background-color: darkblue; color: aliceblue;">
+    <h1 style="text-align:center;color: aliceblue;">Application Form</h1>
+    <br>
+    <form style="font-size: larger;margin-left: 500px;" action="" method="get">
+        <label for="fname">First name:</label>
+        <input style="margin-left: 15px;" type="text" name="fname" id="fname" required placeholder="First name">
+        <label style="margin-left: 50px;" for="lname">Last name:</label>
+        <input style="margin-left: 60px;" type="text" name="lname" id="lname" placeholder="Last name" required>
+        <br><br>
+        <label for="DOB">Date of birth:</label>
+        <input type="date" name="DOB" id="DOB" required>
+        <label style="margin-left: 100px;" for="age">Age:</label>
+        <input style="margin-left: 112px;" type="number" name="age" id="Age" placeholder="18" required>
+        <br><br>
+        <label for="gender">Gender:</label>
+        <input style="margin-left: 40px;" list="gender" name="gender">
+        <datalist  id="gender">
+            <option value="male"></option>
+            <option value="female"></option>
+            <option value="others"></option>
+        </datalist>
+        <label style="margin-left: 50px;" for="email">Email Adrress:</label>
+        <input style="margin-left: 32px;" type="email"  name="email" id="email" placeholder="abc@def.com">
+        <br><br>
+        <p style="display: inline;">Positions available:</p>
+        <input type="checkbox" name="positions" id="juniordeveloper" value="junior junior-developer">
+        <label for="junior-developer"> Junior-developer</label>
+        <input type="checkbox" name="positions" id="mid-level developer" value="mid-level developer">
+        <label for="mid-level developer">Mid-level developer</label>
+        <input type="checkbox" name="positions" id="senior developer" value="senior developer">
+        <label for="senior developer">Senior developer</label>
+        <br><br>
+        <p style="display: inline;">Programming languages:</p>
+        <input style="margin-left: 60px;" type="checkbox" name="programming languages" id="java" value="java">
+        <label for="java">Java</label>
+        <input  style="margin-left: 60px;" type="checkbox" name="javascript" id="javascript" value="javascript">
+        <label for="javascript">Javascript</label>
+        <input style="margin-left: 60px;" type="checkbox" name="python" id="python" value="python">
+        <label for="python">Python</label>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="12345678" required>
+        <label style="margin-left: 68px;" for="confirm password">Confirm Password:</label>
+        <input type="password" name="confirm password" id="confirm password" placeholder="12345678" required>
+        <br>
+        <br>
+        <button style="margin-left:275px; background-color: chocolate;" type="submit">Submit</button>
+        <button style="background-color: chocolate;" type="reset">Reset</button>
+
+    </form>
+</body>
+</html>
